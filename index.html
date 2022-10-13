@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Space tourism website</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+<script src="script.js"></script>
+
+
+ </head>
+<!-------------------------------------------------------------------------INICIO DA NAV--------------------------------------------------------------------------------------------->
+ <body>
+ <window onload="ChecaMOBILE()">
+ <div id="Cellmenu">
+ <div id="XBTN"><button id="BtnIconCellX" onclick="botaoX()"><img id="CellIcom"src="XIcomCELL.png"></button></div>
+
+ <button id="BtnHCell" class="bnav" onclick="botaoHOME()"><b>00</b> HOME</button>
+ <button id="BtnDCell" class="bnav" onclick="botaoDEST()"><b>01</b> DESTINATION</button>
+ <button id="BtnCCell" class="bnav" onclick="botaoCREW()"><b>02</b> CREW</button>
+ <button id="BtnTCell" class="bnav" onclick="botaoTEC()"><b>03</b> TECHNOLOGY</button>
+ </div>
+
+ <header>
+<div id="divEstrela"><img class="estrela"src="Bestrela.png"></div>
+ <nav>
+ <button id="BtnH" onclick="botaoHOME()"><b>00</b> HOME</button>
+ <button id="BtnD" onclick="botaoDEST()"><b>01</b> DESTINATION</button>
+ <button id="BtnC" onclick="botaoCREW()"><b>02</b> CREW</button>
+ <button id="BtnT" onclick="botaoTEC()"><b>03</b> TECHNOLOGY</button>
+ <button id="BtnIcon" onclick="botaoCELL()"><img id="CellIcom"src="IcomCELL.png"></button>
+ </nav> 
+ </header>
+ <!-------------------------------------------------------------------------FIM DA NAV--------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------INICIO DA HOME--------------------------------------------------------------------------------------------->
+ <div id="PagHome">
+
+ <div id="Hometext">
+ <h3 id="pretext">SO, YOU WANT TO TRAVEL TO</h3>
+ <h1 id="espaçotxt">SPACE</h1>
+ <p id="txt1">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p> 
+ </div>
+
+ <div id="Explorebtn">
+ <button id="EXPBTN" onclick="botaoDEST()">EXPLORE</button>
+ </div>
+
+ </div id="PagHome">
+<!-------------------------------------------------------------------------FIM DA HOME--------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------INICIO DEST--------------------------------------------------------------------------------------------->
+ <div id="PagDest">
+
+ <div id="title01">
+ <h2 id="Num">01</h2>
+ <h2 id="Numtext">PICK YOUR DESTINATION</h2>
+ </div>
+
+ <aside id="ladoPlanetas"><img id="planeta"src="MOON.png"></aside>
+
+ <section id ="ContDEST">
+ 
+ <div id="planets">
+  <button id="BtnMoon" onclick="botaoMoon()">MOON</button>
+  <button id="BtnMars" onclick="botaoMars()">MARS</button>
+  <button id="BtnEuropa" onclick="botaoEuropa()">EUROPA</button>
+  <button id="BtnTitan" onclick="botaoTitan()">TITAN</button>
+ </div>
+ <div id="Boxplanetname">
+ <h1 id="planetname">MOON</h1>
+ </div>
+ <div id="Boxtxt2">
+ <p id="txt2">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+</div>
+ <div id="linha"><p id="invisibleA">a</p></div>
+
+ <div id="extrainfo">
+ <div id="KM">
+ <p id="KMtitle">AVG. DISTANCE</p>
+ <p id="KMcont">384,400 KM</p>
+ </div>
+
+ <div id="TIME">
+ <p id="TIMEtitle">EST. TRAVEL TIME</p>
+ <p id="TIMEcont">3 DAYS</p>  
+ </div>
+ </div id="extrainfo">
+ 
+ </section>
+
+
+ </div>
+ <!-------------------------------------------------------------------------FIM DEST--------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------INICIO CREW--------------------------------------------------------------------------------------------->
+ <div id="PagCrew">
+   
+<div id="title02">
+ <h2 id="Num2">02</h2>
+ <h2 id="Numtext2">MEET YOUR CREW</h2>
+ </div>
+
+ <section id ="ContCREW">
+
+ <div id="rankbox">
+   <p id="rank">COMMANDER</p>
+ </div>
+
+ <div id="Pnamebox">
+ <h1 id="Pname">DOUGLAS HURLEY</h1>
+ </div>
+
+ <div id="txt3box">
+ <p id="txt3">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+ </div>
+
+ <div id="CrewPbox">
+ <div id="CrewP">
+ <button id="BtnB1" class="BtnB" onclick="botaoB1()"></button>
+ <button id="BtnB2" class="BtnB" onclick="botaoB2()"></button>
+ <button id="BtnB3" class="BtnB" onclick="botaoB3()"></button>
+ <button id="BtnB4" class="BtnB" onclick="botaoB4()"></button>
+ </div>
+ </div>
+
+
+
+ </section>
+
+ <aside id="ladoPessoas"><img id="Pessoa"src="COMMANDER.png"></aside>
+
+ </div>
+<!-------------------------------------------------------------------------CREW MOBILE --------------------------------------------------------------------------------------------->
+
+<div id="PagCrewM">
+   
+<div id="title02">
+ <h2 id="Num2">02</h2>
+ <h2 id="Numtext2">MEET YOUR CREW</h2>
+ </div>
+
+
+ <aside id="ladoPessoas"><img id="PessoaM"src="COMMANDER.png"></aside>
+
+ <section id ="ContCREW">
+  
+ <div id="CrewPbox">
+ <div id="CrewP">
+ <button id="BtnB1M"  onclick="botaoB1M()"></button>
+ <button id="BtnB2M" class="BtnB" onclick="botaoB2M()"></button>
+ <button id="BtnB3M" class="BtnB" onclick="botaoB3M()"></button>
+ <button id="BtnB4M" class="BtnB" onclick="botaoB4M()"></button>
+ </div>
+ </div>
+
+ <div id="rankbox">
+   <p id="rankM">COMMANDER</p>
+ </div>
+
+ <div id="Pnamebox">
+ <h1 id="PnameM">DOUGLAS HURLEY</h1>
+ </div>
+
+ <div id="txt3box">
+ <p id="txt3M">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+ </div>
+
+
+ </section>
+
+ </div>
+
+
+<!-------------------------------------------------------------------------FIM CREW--------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------INICIO TEC--------------------------------------------------------------------------------------------->
+ 
+ <div id="PagTec">
+  <div id="title03">
+  <h2 id="Num3">03</h2>
+  <h2 id="Numtext3">SPACE LAUNCH 101</h2>
+  </div>
+ 
+ 
+  <div id="TecHalf">
+ 
+ <div id="TecBtn">
+   <button id="BtnTEC1" class="BtnTEC" onclick="botaoT1()">1</button>
+   <button id="BtnTEC2" class="BtnTEC" onclick="botaoT2()">2</button>
+   <button id="BtnTEC3" class="BtnTEC" onclick="botaoT3()">3</button>
+ </div>
+ <div id="centralizar">
+   <div id="TecText1">
+     <p id="ran">THE TERMINOLOGY...</p>
+   </div>
+   
+   <div id="TecText2">
+    <h1 id="TecTitle">LAUNCH VEHICLE</h1>
+   
+   </div>
+   <div id="LV" class="LadoTxt">
+     <p>A launch vehicle or carrier rocket is a rocket-propelled 
+       vehicle used to carry a payload from Earth's surface to space,
+        usually to Earth orbit or beyond. Our WEB-X carrier rocket is
+         the most powerful in operation. Standing 150 metres tall, it's 
+         quite an awe-inspiring sight on the launch pad!</p> 
+   </div>
+ 
+ </div>
+ 
+ 
+   
+   
+  </div>
+ 
+  <div id="TecHalf01">
+   
+   <aside> <img id="nave"src="Bitmap (2).png"></aside>
+  
+   
+ </div>
+  </div>
+ <!-------------------------------------------------------------------------TEC MOBILE--------------------------------------------------------------------------------------------->
+<div id="PagTecM">
+
+<div id="title03">
+<h2 id="Num3">03</h2>
+<h2 id="Numtext3">SPACE LAUNCH 101</h2>
+</div>
+
+<div id="TecHalf01M">
+   
+<img id="naveM"src="rocket.png">
+
+</div>
+
+<div id="TecHalfM">
+ 
+ <div id="TecBtnM">
+   <button id="BtnTEC1M" class="BtnTEC" onclick="botaoT1M()">1</button>
+   <button id="BtnTEC2" class="BtnTEC" onclick="botaoT2M()">2</button>
+   <button id="BtnTEC3" class="BtnTEC" onclick="botaoT3M()">3</button>
+ </div>
+ <div id="centralizarM">
+   <div id="TecText1M">
+     <p id="ranM">THE TERMINOLOGY...</p>
+   </div>
+   
+   <div id="TecText2M">
+    <h1 id="TecTitleM">LAUNCH VEHICLE</h1>
+   
+   </div>
+   <div id="LV" class="LadoTxt">
+     <p id="TxtEXP">A launch vehicle or carrier rocket is a rocket-propelled 
+       vehicle used to carry a payload from Earth's surface to space,
+        usually to Earth orbit or beyond. Our WEB-X carrier rocket is
+         the most powerful in operation. Standing 150 metres tall, it's 
+         quite an awe-inspiring sight on the launch pad!</p> 
+   </div>
+ 
+ </div>
+ 
+ 
+   
+   
+  </div>
+ 
+</div>
+
+<!-------------------------------------------------------------------------FIM tec--------------------------------------------------------------------------------------------->
+ </body>
+
+ </html>
